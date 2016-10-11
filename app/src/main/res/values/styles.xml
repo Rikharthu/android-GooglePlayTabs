@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0288D1</item>
+        <item name="colorPrimaryDark">#0288D1</item>
+        <item name="colorAccent">#00BCD4</item>
+    </style>
+
+    <!--Customize your Tabs-->
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <!--<item name="tabMaxWidth">@dimen/tab_max_width</item>-->
+        <item name="tabIndicatorColor">#CDDC39</item> <!--Tab color-->
+        <!--<item name="tabIndicatorHeight">2dp</item>-->
+        <!--<item name="tabPaddingStart">12dp</item>-->
+        <!--<item name="tabPaddingEnd">12dp</item>-->
+        <!--<item name="tabBackground">?attr/selectableItemBackground</item>-->
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <!--<item name="tabSelectedTextColor">?android:textColorPrimary</item>-->
+    </style>
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">false</item><!--bye default tab tex is always CAPS-->
+    </style>
+
+</resources>

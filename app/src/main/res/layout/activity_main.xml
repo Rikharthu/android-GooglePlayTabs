@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--TabLayout provides a horizontal layout to display tabs.
+    Responsible for rendering tabs
+    Default tab color is accent color
+    see styles.xml-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sliding_tabs"
+        app:tabGravity="fill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        style="@style/MyCustomTabLayout"/> <!--override tab style-->
+    <!--
+        app:tabMode="scrollable" - make tabs scrollable (default is fixed, tabs resized to fill)
+    -->
+
+    <!--Used to page through various fragments-->
+    <!--Controls actual swiping across "pages"
+    Gets it's content from PagerAdapter (FragmentPagerAdapter)-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+
+</LinearLayout>
